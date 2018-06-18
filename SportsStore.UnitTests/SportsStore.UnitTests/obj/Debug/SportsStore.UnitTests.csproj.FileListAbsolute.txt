@@ -83,3 +83,7 @@ C:\GIT\SportsStoreApp\SportsStore\SportsStore.UnitTests\SportsStore.UnitTests\ob
 C:\GIT\SportsStoreApp\SportsStore\SportsStore.UnitTests\SportsStore.UnitTests\obj\Debug\SportsStore.UnitTests.csproj.CoreCompileInputs.cache
 C:\GIT\SportsStoreApp\SportsStore\SportsStore.UnitTests\SportsStore.UnitTests\obj\Debug\SportsStore.UnitTests.dll
 C:\GIT\SportsStoreApp\SportsStore\SportsStore.UnitTests\SportsStore.UnitTests\obj\Debug\SportsStore.UnitTests.pdb
+C:\GIT\SportStore\SportsStore\SportsStore.UnitTests\SportsStore.UnitTests\obj\Debug\SportsStore.UnitTests.csprojAssemblyReference.cache
+C:\GIT\SportStore\SportsStore\SportsStore.UnitTests\SportsStore.UnitTests\obj\Debug\SportsStore.UnitTests.csproj.CoreCompileInputs.cache
+C:\GIT\SportStore\SportsStore\SportsStore.UnitTests\SportsStore.UnitTests\obj\Debug\SportsStore.UnitTests.dll
+C:\GIT\SportStore\SportsStore\SportsStore.UnitTests\SportsStore.UnitTests\obj\Debug\SportsStore.UnitTests.pdb
