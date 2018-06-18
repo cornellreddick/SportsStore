@@ -12,10 +12,10 @@ namespace SportsStore.WebUI.Controllers
         private IProductsRepository repository;
         private IOrderProcessor orderProcessor;
 
-        public CartController(IProductsRepository repo, IOrderProcessor proc)
+        public CartController(IProductsRepository repo/*, IOrderProcessor proc*/)
         {
             repository = repo;
-            orderProcessor = proc;
+            //orderProcessor = proc;
         }
         public ViewResult Index(Cart cart, string returnUrl)
         {
