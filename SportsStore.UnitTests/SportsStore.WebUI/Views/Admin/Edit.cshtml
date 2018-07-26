@@ -12,28 +12,38 @@
     <h3>Edit @Model.Name</h3>
 </div>
 
-@using (Html.BeginForm("Edit", "Admin"))
+@using (Html.BeginForm("Edit", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     <div class="panel-body">
         @Html.HiddenFor(m => m.ProductID)
         @foreach (var property in ViewData.ModelMetadata.Properties)
-        {
-            if (property.PropertyName != "ProductID")
-            {
-                <div class="form-group">
-                    <label>@(property.DisplayName ?? property.PropertyName)</label>
-                    @if (property.PropertyName == "Description")
                     {
-                        @Html.TextBox(property.PropertyName, null, new {@class = "form-control", rows = 5})
-                    }
-                    else
-                    {
-                        @Html.TextBox(property.PropertyName, null, new {@class = "form-control"})
-                    }
-                    @Html.ValidationMessage(property.PropertyName)
-                </div>
-            }
-        }
+                        switch (property.PropertyName)
+                        {
+                            case "ProductID":
+                            case "ImageData":
+                            case "ImageMimeType":
+                                //do nothing    
+                                break;
+                            default:
+                        
+                                     <div class="form-group">
+                                        <label>@(property.DisplayName ?? property.PropertyName)</label>
+                                        @if (property.PropertyName == "Description")
+                                         {
+                                             @Html.TextBox(property.PropertyName, null, 
+                                                new {@class = "form-control", rows = 5})
+                                         }
+                                        else
+                                         {
+                                            @Html.TextBox(property.PropertyName, null, new {@class = "form-control"})
+                                         }
+                                        @Html.ValidationMessage(property.PropertyName)
+                                    </div>
+                                    break;
+                        }
+         }
+
     </div>
 
     <div class="panel-footer">
